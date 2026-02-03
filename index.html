@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>QUOKKA COFFE SHOP</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link rel="stylesheet" href="style/quokka.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Soporte al cliente</span>
+							<span class="number">727-4200</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<i class="fa-solid fa-mug-hot"></i>
+						<h1 class="logo"><a href="#">QUOKKA COFFE SHOP</a></h1>
+					</div>
+
+					<div class="container-user">
+						<i class="fa-solid fa-user"></i>
+						<i class="fa-solid fa-basket-shopping"></i>
+						<div class="content-shopping-cart">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<!-- <i class="fa-solid fa-bars"></i> -->
+                     <i class="fa-solid fa-bars" id="menu-toggle"></i>
+
+					<ul class="menu">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="html/sobreNosotros.html">Sobre Nosotros</a></li>
+						<li><a href="docs/Catálogo Quokka.pdf">Catálogo</a></li>
+						<li><a href="html/Reservas.html">Reservas</a></li>
+						<li><a href="http://localhost:3000/">Iniciar Sesión (Solo empleados)</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+        <section class="banner">
+			<div class="content-banner">
+				<p>Café Delicioso</p>
+				<h2>100% Natural <br />Café Fresco</h2>
+			</div>
+		</section>
+
+        <main class="main-content">
+            <section class="container container-features">
+
+				<div class="card-feature">
+					<i class="fa-solid fa-tag"></i>
+					<div class="feature-content">
+						<a href="http://localhost:3000/VizualizarPromociones.html"><span>Promociones</span></a>
+						<p>Visualiza aquí para recibir descuentos!!</p>
+					</div>
+				</div>
+
+				<div class="card-feature">
+					<i class="fa-solid fa-motorcycle"></i>
+					<div class="feature-content">
+						<a href="http://localhost:3000/realizarpedido.html"><span>Realizar Pedido</span></a>
+						<p>Te enviamos lo que pidas a casa!</p>
+					</div>
+				</div>
+
+                <div class="card-feature">
+					<i class="fa-solid fa-file"></i>
+					<div class="feature-content">
+						<a href="Catálogo Quokka.pdf" target="_blank"><span>Catálogo</span></a>
+						<p>Visualiza todo lo que tenemos para ti</p>
+					</div>
+				</div>
+
+				<div class="card-feature">
+					<i class="fa-solid fa-comments"></i>
+					<div class="feature-content">
+						<a href="https://forms.gle/obarSTkKC59q9uNG8" target="_blank"><span>Dejar Comentario</span></a>
+						<p>Dejanos saber tu Opinión</p>
+					</div>
+				</div>
+			</section>
+
+            <section class="container top-categories">
+				<h1 class="heading-1">Mejores Categorías</h1>
+				<div class="container-categories">
+
+					<div class="card-category category-moca">
+						<p>Café moca</p>
+						<span>Ver más</span>
+					</div>
+
+					<div class="card-category category-expreso">
+						<p>Expreso Americano</p>
+						<span>Ver más</span>
+					</div>
+
+					<div class="card-category category-capuchino">
+						<p>Cappuccino</p>
+						<span>Ver más</span>
+					</div>
+
+				</div>
+			</section>
+
+            <section class="container top-products">
+                <h1 class="heading-1">
+                    &middot; &middot; &middot; &middot; &middot; &middot;  Nuestra Carta  &middot; &middot; &middot; &middot; &middot; &middot;
+                </h1>
+
+                <div class="circles-container">
+                    <div class="circle-container">
+                        <a href="http://localhost:3000/bebidas.html">
+                            <div class="circle">
+                                <img src="img/Bebidas.jpeg" alt="Café">
+                            </div>
+                        </a>
+                        <p>Bebidas</p>
+                    </div>
+
+                    <div class="circle-container">
+                        <a href="http://localhost:3000/PostresSandwiches.html">
+                            <div class="circle">
+                                <img src="img/BANANA BREAD.jpeg" alt="Pastel">
+                            </div>
+                        </a>
+                        <p>Pasteles</p>
+                    </div>
+
+                    <div class="circle-container">
+                        <a href="http://localhost:3000/SandwichesPostres.html">
+                            <div class="circle">
+                                <img src="img/SANDWICH DE POLLO.webp" alt="Sándwich">
+                            </div>
+                        </a>
+                        <p>Sandwiches</p>
+                    </div>
+                </div>
+
+                <div class="separador">
+                    &middot; &middot; &middot; &middot; &middot;
+                </div>
+            </section>
+
+            <section class="container top-products">
+				<h1 class="heading-1">Mejores Productos</h1>
+
+				<div class="container-options">
+					<span class="active">Destacados</span>
+					<span>Más recientes</span>
+					<span>Mejores Vendidos</span>
+				</div>
+
+				<div class="container-products">
+
+					<!-- Producto 1 -->
+
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/machiato 2.avif" alt="Cafe Macchiato" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+						<br>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+
+							<h3>Cafe Macchiato</h3>
+							
+							<p class="price">S/. 11.00</p>
+						</div>
+					</div>
+
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="img/cafe latte.jpeg"
+								alt="Cafe Latte"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+						<br>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Vainilla Latte</h3>
+							
+							<p class="price">S/. 10.50</p>
+						</div>
+					</div>
+
+					<!-- Producto 3 -->
+
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="img/cafe caribeño.webp"
+								alt="Cafe Caribeño"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+						<br>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Cafe Caribeño</h3>
+							
+							<p class="price">S/. 16.00</p>
+						</div>
+					</div>
+
+					<!--  Producto 4 -->
+
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe helado.webp" alt="Frapuccino" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+						<br>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Frapuccino</h3>
+							
+							<p class="price">S/. 18.00</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<img
+					src="img/ambiente 2.jpg"
+					alt="Gallery Img1"
+					class="gallery-img-1"
+				/><img
+					src="img/ambiente 3.jpg"
+					alt="Gallery Img2"
+					class="gallery-img-2"
+				/><img
+					src="img/ambiente 1.jpg"
+					alt="Gallery Img3"
+					class="gallery-img-3"
+				/><img
+					src="img/ambiente 4.jpg"
+					alt="Gallery Img4"
+					class="gallery-img-4"
+				/><img
+					src="img/ambiente 5.jpg"
+					alt="Gallery Img5"
+					class="gallery-img-5"
+				/>
+			</section>
+
+			<section class="container specials">
+				<h1 class="heading-1">Especiales</h1>
+
+				<div class="container-products">
+
+					<!-- Producto 1 -->
+
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/ENRROLLADOS DE CANELA.jpeg" alt="Enrollados" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+                        <br>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Enrollados de Canela</h3>
+							
+							<p class="price">S/. 6.00</p>
+						</div>
+					</div>
+
+					<!-- Producto 2 -->
+
+					<div class="card-product">
+
+						<div class="container-img">
+							<img
+								src="img/Keke de pecanas.png"
+								alt="Keke Pecanas"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+                        <br>
+
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Keke de Pecanas</h3>
+							
+							<p class="price">S/. 8.70</p>
+						</div>
+					</div>
+
+					<!-- Producto 3 -->
+
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/Torta zanahoria.png" alt="Torta Zanahoria" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+                        <br>
+
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Torta de Zanahoria</h3>
+							
+							<p class="price">S/. 38.00</p>
+						</div>
+					</div>
+
+					<!-- Producto 4  -->
+
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/Tartaleta de Aguaymanto.png" alt="Tartaleta" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+                        <br>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Tartaleta de Aguaymanto</h3>
+							
+							<p class="price">S/. 7.80</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container footer-content">
+
+					<!-- LOGO / DESCRIPCIÓN -->
+					<div class="footer-box">
+						<h2 class="footer-logo">
+							<i class="fa-solid fa-mug-hot"></i> QUOKKA COFFE SHOP
+						</h2>
+						<p>
+							Café artesanal, momentos reales y sabor que abraza.
+							Tradición en cada taza.
+						</p>
+					</div>
+
+					<!-- ENLACES -->
+					<div class="footer-box">
+						<h3>Términos y Condiciones</h3>
+						<ul>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+						</ul>
+					</div>
+
+					<!-- CONTACTO -->
+					<div class="footer-box">
+						<h3>Contacto</h3>
+						<p><i class="fa-solid fa-phone"></i> (01) 4836392</p>
+						<p><i class="fa-solid fa-location-dot"></i> Lima, Perú</p>
+						<p><i class="fa-solid fa-envelope"></i> Quokkacoffe@gmail.com</p>
+					</div>
+
+					<!-- REDES -->
+					<div class="footer-box">
+						<h3>Síguenos </h3>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/quokkacoffeeshop/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="https://www.instagram.com/quokkacoffeeshop/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					© 2026 QUOKKA COFFE SHOP · Donde el café se vuelve experiencia ☕
+				</div>
+			</footer>
+
+        </main>
+
+
+        <script src="js/quokka.js"></script>
+	</body>
+</html>

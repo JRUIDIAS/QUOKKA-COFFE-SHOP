@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+    --button-color: sienna;
+    --button-hover-color: rgb(173, 120, 95);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
+
+.heading-1 {
+	font-size: clamp(1.9rem, 4vw, 2.7rem);
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0.08em;
+	margin: 1.6rem 0 0.8rem;
+	position: relative;
+	text-transform: uppercase;
+}
+
+/* Línea decorativa clásica */
+.heading-1::after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 1px;
+	background-color: var(--secondary-color);
+	margin: 1rem auto 0;
+	border-radius: 2px;
+	opacity: 0.9;
+}
+
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.container-hero {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco más transparente */
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+    color: var(--dark-color);
+}
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-logo i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/* ************* NAVBAR ************* */
+.container-navbar {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco más transparente */
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem; 
+	color: var(--dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+/* ===============================
+   📱 HEADER RESPONSIVE COMPACTO
+================================ */
+@media (max-width: 765px) {
+
+	.container-hero {
+		font-size: 1rem;
+	}
+
+	.customer-support,
+	.container-logo,
+	.container-user {
+		padding: 0.8rem 0;
+	}
+
+	.customer-support {
+		gap: 1rem;
+	}
+
+	.customer-support i {
+		font-size: 2rem;
+	}
+
+	.content-customer-support span {
+		font-size: 0.8rem;
+	}
+
+	.container-logo {
+		gap: 0.4rem;
+	}
+
+	.container-logo i {
+		font-size: 2rem;
+	}
+
+	.container-logo h1 a {
+		font-size: 1.7rem;
+	}
+
+	.container-user {
+		display: none;
+	}
+}
+
+/* ===============================
+   📱 NAVBAR RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+
+	.navbar {
+		position: relative;
+		height: 4rem;
+		z-index: 99; /* 👈 MUY importante */
+        background-color: var(--primary-color);
+	}
+
+	/* Mostrar hamburguesa */
+	.navbar .fa-bars {
+		display: block;
+		font-size: 1.5rem;
+		cursor: pointer;
+		color: var(--dark-color);
+		padding: 1rem ;
+	}
+
+	/* Ocultar menú por defecto */
+	.menu {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		width: 100%;
+        background-color: var(--primary-color);
+		flex-direction: column;
+		align-items:flex-start ;
+		gap: 1.5rem;
+		padding: 1.8rem ;
+		display: none;
+	}
+
+	/* Menú activo */
+	.menu.active {
+		display: flex;
+	}
+
+	.menu a {
+		font-size: 0.9rem;
+	}
+}
+
+/* ************* MAIN CONTENT ************* */
+
+.main-content {
+    padding: 2rem;
+}
+
+body {
+    background-image: url('../img/ambiente\ 1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* ********************************** */
+/*            FORMULARIO              */
+/* ********************************** */
+
+.container-reservas {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco más transparente */
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    font-size: 1.4rem;
+    padding: 0.75rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: var(--dark-color);
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+
+.btn-reserva {
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 2rem; /* Aumenta el padding horizontal para hacerlo más ancho */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    text-transform: uppercase;
+    min-width: 300px; /* Opcional: Establece un ancho mínimo para garantizar que el botón sea lo suficientemente ancho */
+}
+
+.btn-reserva:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Estilos para el combo box de mesas disponibles */
+#mesa {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* ********************************** */
+/*      MODAL EN EL FORMULARIO        */
+/* ********************************** */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-confirm,
+.btn-cancel {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.horario-cafeteria {
+    position: absolute;
+    top: 18%;      /* ⬆️ un poquito más arriba */
+    right: 11%;    /* ⬅️ un poquito más a la izquierda */
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 2rem;
+    border-radius: 1.2rem;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.horario-cafeteria .heading-2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.horario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Limita el ancho máximo de la tarjeta */
+}
+
+.horario-item i {
+    font-size: 2em;
+    color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+.horario-dias {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+.horario-horas {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* ===============================
+   📱 FORMULARIO + HORARIO MOBILE
+================================ */
+@media (max-width: 768px) {
+    .heading-1 {
+        font-size: clamp(1.9rem, 4vw, 2.7rem);
+        font-weight: 700;
+        text-align: left;
+        letter-spacing: 0.08em;
+        margin: 1.6rem 0 0.8rem;
+        position: relative;
+        text-transform: uppercase;
+        color: #000;
+
+        /* Filo blanco */
+        text-shadow:
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px  1px 0 #fff,
+            1px  1px 0 #fff;
+    }
+
+    /* Línea decorativa clásica */
+    .heading-1::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 1px;
+        background-color: var(--secondary-color);
+        margin: 1rem auto 0;
+        border-radius: 2px;
+        opacity: 0.9;
+    }
+
+    .horario-cafeteria {
+        top: 14.56%;      /* ⬆️ un poquito más arriba */
+        right: 3%;    /* ⬅️ un poquito más a la izquierda */
+        position: absolute;
+        max-width: 220px;
+        padding: 1rem;
+    }
+
+    .horario-container {
+        margin: 0;
+    }
+
+    .horario-item {
+        padding: 0.7rem;      /* ⬇️ menos aire interno */
+        gap: 0.1rem;
+    }
+
+    .horario-item i {
+        font-size: 0.9rem; 
+    }
+
+    .horario-cafeteria .heading-2 {
+        font-size: 1rem;
+        margin-top: 0.1rem;
+    }
+
+    .horario-dias {
+        font-size: 1rem;
+    }
+
+    .horario-horas {
+        font-size: 0.7rem;
+    }
+
+    /* Contenedor del formulario */
+    .container-reservas {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+
+    /* Inputs un poco más compactos */
+    .form-group label {
+        font-size: 1.2rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    #mesa {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+
+    /* Botón: ancho completo, pulgar feliz */
+    .btn-reserva {
+        min-width: 100%;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+.footer {
+	background-color: var(--primary-color);
+}
+
+/* COPYRIGHT */
+.copyright {
+	margin-top: 3rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	text-align: center;
+	font-size: 1.1rem; 
+	opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+
+	.footer {
+		padding: 1rem;
+	}
+
+	.copyright {
+		font-size: 0.87rem;
+		margin-top: 1rem;
+	}
+}
+
